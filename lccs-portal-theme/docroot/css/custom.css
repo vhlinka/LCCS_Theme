@@ -1,0 +1,10 @@
+.aui body {
+    background-color: #ebebeb;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.85em;
+}
+
+/*** Override ********/
+a.portlet-icon-back{
+	display:none;
+}

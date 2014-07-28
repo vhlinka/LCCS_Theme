@@ -1,0 +1,187 @@
+.aui body {
+    background-color: #ebebeb;
+    color: #1c5a83;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.85em;
+}
+
+.aui fieldset {
+    border: 2px solid #bababa;
+    /*background-color: #ffffff;*/
+}
+
+.aui legend {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Hyperlink color*/
+.aui a {
+    color: #dc7b0b;
+}
+
+/* CSS to have tow column layout */
+.aui .labelCol, .aui .fieldCol {
+    float: left;
+    padding: 3px 5px;
+}
+
+.aui .row {
+    float: left;
+    clear: both;
+    line-height: 3em;
+}
+
+.aui select, .aui input[type="text"],.aui input[type="password"] {
+    border: 2px solid #1c5a83;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 3px 5px;
+    line-height: 1.5em;
+}
+
+/* Astertik for required fields */
+.aui .required:after {
+  content:" *";
+  color: red;
+}
+
+/* Dropdown box style */
+.aui .select-wrapper{
+    float: left;
+    display: inline-block;
+    border: 2px solid #1c5a83;
+    border-radius:5px;
+    background: url("dropdownImg.png") no-repeat right 0 transparent;
+    cursor: pointer;
+    padding-left:8px;
+    margin-top:8px;
+}
+.aui .select-wrapper, .select-wrapper select{
+    width: 200px;
+    height: 26px;
+    line-height: 2em;
+}
+
+.aui .select-wrapper select{
+    margin: 0;
+    position: absolute;
+    z-index: 2;            
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    /* CSS hacks for older browsers */
+    _noFocusLine: expression(this.hideFocus=true); 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+}
+
+
+/*radio box style */
+.aui input[type=radio].css-checkbox {
+    display:none;
+}
+
+.aui input[type=radio].css-checkbox + label.css-label {
+    padding-left:25px;
+    height:20px; 
+    display:inline-block;
+    line-height:20px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.aui input[type=radio].css-checkbox:checked + label.css-label {
+    background-position: 0 -20px;
+}
+                                        
+.aui label.css-label {
+    background-image:url(radioBoxSprite.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*checkbox style */
+.aui input[type=checkbox].css-checkbox1 {
+    display:none;
+}
+
+.aui input[type=checkbox].css-checkbox1 + label.css-label1 {
+    padding-left:23px;
+    height:18px; 
+    display:inline-block;
+    line-height:18px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.aui input[type=checkbox].css-checkbox1:checked + label.css-label1 {
+    background-position: 0 -18px;
+}
+                                        
+.aui label.css-label1 {
+    background-image:url(checkboxSprite.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* action button style */
+.aui .activeBtn, button {
+    border: none !important;
+    border-radius: 5px;
+    padding: 0 9px;
+    margin:0;
+    line-height: 2em;
+    color: #ffffff;
+    background: #8bcfff; /* Old browsers */
+    background: -moz-linear-gradient(top, #8bcfff 0%, #285777 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8bcfff), color-stop(100%,#285777)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #8bcfff 0%,#285777 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #8bcfff 0%,#285777 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #8bcfff 0%,#285777 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #8bcfff 0%,#285777 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.Gradient( startColorStr='#8bcfff', endColorStr='#285777',GradientType=0 ); /* IE6-8 */
+}
+
+.aui .activeBtn:hover, button:hover {
+    cursor: pointer;
+    background: #397aa8; /* Old browsers */
+    background: -moz-linear-gradient(top, #397aa8 0%, #0d283d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#397aa8), color-stop(100%,#0d283d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #397aa8 0%,#0d283d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #397aa8 0%,#0d283d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #397aa8 0%,#0d283d 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #397aa8 0%,#0d283d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.Gradient( startColorStr='#397aa8', endColorStr='#0d283d',GradientType=0 ); /* IE6-8 */
+}
+
+.aui .inactiveBtn {
+    background-color: #c8c8c8;
+    border: none !important;
+    border-radius: 5px;
+    padding: 0 9px;
+    margin:0;
+    line-height: 2em;
+    color: #ffffff;
+}
+
+/*** Override ********/
+a.portlet-icon-back{
+	display:none;
+}
