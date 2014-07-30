@@ -1,5 +1,6 @@
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 .aui body {
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
     font-family: Verdana, Arial, sans-serif;
     font-size: 0.85em;
 }
