@@ -23,10 +23,12 @@ ${theme.include(body_top_include)}
 </#if>
 
 <div class="container-fluid" id="wrapper">
-	<header id="banner" role="banner" >
-		<div id="heading" style="background-image:url(/lccs-portal-theme/images/lccs_banner.jpg) no-repeat;">
-			
-		<h1 class="site-title">
+	<header id="banner" role="banner">
+		<div id="heading" style="margin-bottom:3%;">
+			<a href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+					<img alt="${logo_description}" src="/lccs-portal-theme/images/lccs_banner.jpg" style="display:block;margin-left:auto;margin-right:auto;"/>
+				</a>
+		<#-- <h1 class="site-title">
 				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
 					<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
 				</a>
